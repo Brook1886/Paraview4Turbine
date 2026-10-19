@@ -1,0 +1,120 @@
+# CGNS meshes and solutions. These are large binaries (bfs.cgns is 80 MB,
+# r37.cgns is 53 MB) and are inputs, not source. Keep them out of history.
+*.cgns
+*.hdf
+*.h5
+
+# Python bytecode, including what ParaView writes next to a loaded plugin.
+__pycache__/
+*.py[cod]
+
+# ParaView session output, including the profiles and averages the tools
+# export. Measurement inputs to compare against live outside the repository.
+*.csv
+*.tsv
+*.pvsm
+*.pvd
+*.pvtu
+*.vtu
+*.vtm
+*.vtk
+
+# Rendered images and movies.
+*.png
+# ...except the toolbar icons and the manual's figures, which are distributed
+# assets rather than output.
+!icons/*.png
+!doc/figures/*.png
+*.jpg
+*.jpeg
+*.tif
+*.avi
+*.ogv
+
+# Editor and OS leftovers.
+*.swp
+*.swo
+*~
+.DS_Store
+
+# LaTeX leaves these beside the manual. The pdf itself is kept, so that reading
+# it needs no TeX installed; rebuild it with `make -C doc` after editing the tex.
+doc/*.aux
+doc/*.fdb_latexmk
+doc/*.fls
+doc/*.log
+doc/*.out
+doc/*.toc
+
+# Additional build exclusions retained from the GitHub repository.
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Linker files
+*.ilk
+
+# Debugger Files
+*.pdb
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+*.so.*
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+# Build directories
+build/
+Build/
+build-*/
+
+# CMake generated files
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+install_manifest.txt
+compile_commands.json
+
+# Temporary files
+*.tmp
+*.log
+*.bak
+*.swp
+
+# vcpkg
+vcpkg_installed/
+
+# debug information files
+*.dwo
+
+# test output & cache
+Testing/
+.cache/
+
+# The manual uses a hand-written Makefile.
+!doc/Makefile
